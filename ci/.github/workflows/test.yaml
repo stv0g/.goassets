@@ -26,7 +26,7 @@ jobs:
       fail-fast: false
     name: Go ${{ matrix.go }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - uses: actions/cache@v3
         with:
@@ -91,7 +91,7 @@ jobs:
       fail-fast: false
     name: Go i386 ${{ matrix.go }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - uses: actions/cache@v3
         with:
@@ -124,7 +124,7 @@ jobs:
       fail-fast: false
     name: WASM
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Use Node.js
         uses: actions/setup-node@v3
